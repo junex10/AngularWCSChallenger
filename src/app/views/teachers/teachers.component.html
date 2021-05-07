@@ -1,0 +1,47 @@
+<br><br><br><br>
+<div class="wrapper row3">
+    <main class="hoc container clear">
+        <div class="content">
+            <div class="clear btmspace-50">
+                <h1>Profesores</h1>
+            </div>
+            <br><br><br><br>
+            <div class="clear btmspace-50">
+                <div class='row'>
+
+                    <div class='col-lg-3 col-md-3 col-sm-12 col-12' *ngFor="let d of professors">
+
+                        <article>
+                            <div class='row'>
+                                <div class='col-12'>
+                                    <img *ngIf="d.image != undefined" class='image' src='{{ d.image }}' alt='{{ d.actor }}' width="150">
+                                    <img *ngIf="d.image == undefined" class='image' src='./assets/img/noImage.png' alt='No photo' width="150">
+                                </div>
+                                <div class='col-12'>
+                                    <h6 style='cursor:pointer' class="heading">{{ d.name }}</h6>
+
+                                    <div class='stadist'>
+                                        <div class='row'>
+                                            <div class='col-lg-12 col-sm-12 col-12'><b>Edad:</b> {{ d.age }}</div>
+                                            <div class='col-lg-12 col-sm-12 col-12'><b>Sexo:</b> <span class='noTouch' *ngIf="d.gender == 'male'"> Hombre</span><span class='noTouch' *ngIf="d.gender =='female'"> Mujer</span></div>
+                                            <div class='col-lg-12 col-sm-12 col-12'><b>Patronus:</b> <span class='noTouch' *ngIf="d.patronus != ''"> {{ d.patronus }}</span> <span class='noTouch' *ngIf="d.patronus == ''"> No tiene</span></div>
+                                        </div>
+                                    </div>
+
+                                    <span *ngIf="d.alive == true" class="badge bg-success">Vivo</span>
+                                    <span *ngIf="d.alive != true" class="badge bg-danger">Muerto</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <br><br><br>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </main>
+</div>

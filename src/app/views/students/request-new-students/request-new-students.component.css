@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'ParryHotter';
+    src: url('./../../../../assets/ParryHotter.ttf');
+}
+@font-face {
+    font-family: 'MagicSchoolTwo';
+    src: url('./../../../../assets/MagicSchoolTwo.ttf');
+}@font-face {
+    font-family: 'MagicSchoolOne';
+    src: url('./../../../../assets/MagicSchoolOne.ttf');
+}
+#bg_castle_black{
+    padding: 20px;
+    border-radius: 3px;
+    width: 98%;
+    display: block;
+    margin: 0 auto;
+    color: white;
+}
+.box_site h1{
+    color: #F5C83B;
+    font-family: 'MagicSchoolTwo', 'sans-serif', 'arial';
+    font-size: 60px !important;
+    text-align: center;
+}
+.user_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.comments-list .media{
+    border-bottom: 1px dotted #ccc;
+}
+.user_name{
+    color: #F5C83B;
+    text-align: center;
+    font-family: 'MagicSchoolOne', 'sans-serif', 'arial';
+    font-size: 60px !important;
+}
+.desc{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pick{
+    color:#F5C83B;
+    font-size: 30px !important;
+}

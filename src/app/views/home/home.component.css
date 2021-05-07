@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'ParryHotter';
+    src: url('./../../../assets/ParryHotter.ttf');
+}
+@font-face {
+    font-family: 'MagicSchoolTwo';
+    src: url('./../../../assets/MagicSchoolTwo.ttf');
+}@font-face {
+    font-family: 'MagicSchoolOne';
+    src: url('./../../../assets/MagicSchoolOne.ttf');
+}
+/* Header */
+#header {
+    padding: 0 15px;
+    border: solid;
+    border-width: 1px 0;
+}
+#header #logo {
+    margin: 28px 0 0 0;
+}
+#header #logo h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* IMAGE */
+#pageintro {
+    padding: 180px 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#pageintro article {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+    color: white;
+    border-radius: 3px;
+
+    animation: show-lowerHouse 3s forwards;
+    -webkit-animation: show-lowerHouse 3s forwards;
+    -o-animation: show-lowerHouse 3s forwards;
+    -moz-animation: show-lowerHouse 3s forwards;
+}
+@keyframes show-lowerHouse{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#pageintro .heading {
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+#pageintro p {
+    max-width: 75%;
+    margin: 0 auto;
+}
+#pageintro footer {
+    margin-top: 50px;
+}
+#pageintro footer form {
+    display: block;
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#pageintro footer input,
+#pageintro footer button {
+    display: block;
+    height: 44px;
+    border: none;
+}
+#pageintro footer input {
+    width: 100%;
+    padding: 5px 40px 5px 15px;
+}
+#pageintro footer button {
+    right: 40px;
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#pageintro footer button em {
+    display: none;
+}
+
+/* Content */
+
+.houses{
+    border: none !important;
+    cursor:pointer;
+}
+.sectiontitle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sectiontitle h2{
+    text-align: center;
+    font-family: 'ParryHotter', 'arial', 'sans-serif';
+    font-size: 50px;
+    animation: showHouses forwards 5s;
+    -webkit-animation: showHouses forwards 5s;
+    -o-animation: showHouses forwards 5s;
+    -moz-animation: showHouses forwards 5s;
+}
+@keyframes showHouses{
+    0%{
+        transform: translateX(-1000rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@-webkit-keyframes showHouses{
+    0%{
+        transform: translateX(-1000rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@-o-keyframes showHouses{
+    0%{
+        transform: translateX(-1000rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@-moz-keyframes showHouses{
+    0%{
+        transform: translateX(-1000rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.listShow{
+    animation: showLessListHouses forwards 4s;
+    -webkit-animation: showLessListHouses forwards 4s;
+    -moz-animation: showLessListHouses forwards 4s;
+    -o-animation: showLessListHouses forwards 4s;
+}
+@keyframes showLessListHouses{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes showLessListHouses{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-o-keyframes showLessListHouses{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes showLessListHouses{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.image_house{
+    animation: upperImage forwards 2s;
+    -webkit-animation: upperImage forwards 2s;
+    -o-animation: upperImage forwards 2s;
+    -moz-animation: upperImage forwards 2s;
+}
+@keyframes upperImage{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+@-webkit-keyframes upperImage{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+@-o-keyframes upperImage{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+@-moz-keyframes upperImage{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+.heading{
+    text-align: center;
+}
+h6.heading{
+    font-size: 50px;
+    font-family: 'MagicSchoolTwo', 'arial', 'sans-serif';
+    animation: upperText forwards 2s;
+    -webkit-animation: upperText forwards 2s;
+    -o-animation: upperText forwards 2s;
+    -moz-animation: upperText forwards 2s;
+}
+@keyframes upperText{
+    0%{
+        font-size: 0;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+@-webkit-keyframes upperText{
+    0%{
+        font-size: 0;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+@-o-keyframes upperText{
+    0%{
+        font-size: 0;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+@-moz-keyframes upperText{
+    0%{
+        font-size: 0;
+    }
+    100%{
+        font-size: 50px;
+    }
+}
+.houses img, .leader img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* Lideres */
+.leader img{
+    border-radius: 50% !important;
+    height: 150px;
+    width: 150px;
+}
+.leader h6{
+    font-size: 30px !important;
+}
+
+@media screen and (max-width: 991px) {
+    .sectiontitle h2{
+        font-size: 70px;
+    }
+    .houses img{
+        width: 500px;
+    }
+    .houses{
+        margin-top: 50px !important;
+    }
+    .leader img{
+        height: 250px;
+        width: 250px;
+    }
+    .leader{
+        margin-top: 50px !important;
+    }
+}

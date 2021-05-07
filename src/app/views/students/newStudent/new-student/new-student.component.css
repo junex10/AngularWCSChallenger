@@ -1,0 +1,35 @@
+.bgded{
+    padding: 40px;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.BoxStudent{
+    width: 100% !important;
+    display: block;
+    margin: 0 auto;
+}
+
+#testimonials{
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 3px;
+}
+.sectiontitle{
+    font-family: 'MagicSchoolTwo', 'sans-serif', 'arial';
+    font-size: 40px !important;
+    text-align: center;
+}
+.sectiontitle .heading{
+    font-size: 50px !important;
+}
+label{
+    color: black;
+    font-weight: bolder;
+}
+.colorRed{
+    color: red;
+}
+button[type='submit']{
+    margin-top: 40px;
+}

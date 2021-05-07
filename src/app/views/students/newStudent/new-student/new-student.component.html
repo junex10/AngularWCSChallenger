@@ -1,0 +1,49 @@
+<div class="wrapper bgded overlay" style="background-image:url('./assets/img/new_student.jpg');">
+    <section id="testimonials" class="hoc container clear">
+        <div class="sectiontitle">
+            <h6 class="heading">Nuevo estudiante</h6>
+            <p>Registro de nuevo estudiante</p>
+        </div>
+        <div class="group">
+            <div class='card'>
+                <div class='card-body'>
+                    <form (ngSubmit)='onSubmit()' [formGroup]="form">
+                        <div class='row'>
+                            <div class='col-lg-6 col-md-12 col-12'>
+                                <div class='form-group BoxStudent'>
+                                    <label for='name'>Nombre(s) y apellido(s)</label><span class='colorRed'> *</span><br><br>
+                                    <input type="text" id='name' formControlName="name" class='form-control'>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class='col-lg-6 col-md-12 col-12'>
+                                <div class='form-group BoxStudent'>
+                                    <label for='patronus'>Patronus</label><span class='colorRed'> *</span><br><br>
+                                    <input type="text" id='patronus' class='form-control' formControlName="patronus">
+                                    <br>
+                                </div>
+                            </div>
+                            <div class='col-lg-12 col-md-12 col-12'>
+                                <div class='form-group BoxStudent'>
+                                    <label for='dateBirth'>Fecha de nacimiento</label><span class='colorRed'> *</span><br><br>
+                                    <input type="date" placeholder="dd-mm-yyyy" id='dateBirth' class='form-control' formControlName="dateBirth">
+                                    <br>
+                                </div>
+                            </div>
+                            <div class='col-lg-12 col-md-12 col-12'>
+                                <div class='form-group BoxStudent'>
+                                    <label for='sex'>Sexo</label><span class='colorRed'> *</span><br><br>
+                                    <select class='form-control' id='sex' formControlName='sex'>
+                                        <option value='h'>Hombre</option>
+                                        <option value='m'>Mujer</option>
+                                    </select>
+                                </div>
+                            </div><br><br><br>
+                            <button type="submit" class='btn btn-danger btn-block' [disabled]='!form.valid'>Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

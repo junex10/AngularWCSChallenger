@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'ParryHotter';
+    src: url('./../../../assets/ParryHotter.ttf');
+}
+@font-face {
+    font-family: 'MagicSchoolTwo';
+    src: url('./../../../assets/MagicSchoolTwo.ttf');
+}@font-face {
+    font-family: 'MagicSchoolOne';
+    src: url('./../../../assets/MagicSchoolOne.ttf');
+}
+
+.btmspace-50 h1{
+    font-family: 'MagicSchoolTwo', 'sans-serif', 'arial';
+    font-size: 80px !important;
+}
+article{
+    margin-top: 80px !important;
+}
+article img{
+    display: block;
+    margin: 0 auto;
+}
+article h6{
+    text-align: center;
+}
+article span{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+article .stadist{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+article .noTouch{
+    display: initial !important;
+}
+.newStudent button{
+    background-color: #00165e !important;
+    border-color: #00165e !important;
+}
+.newStudentForm{
+    margin-top: 80px !important;
+    padding: 40px;
+}
+@media screen and (max-width: 991px) {
+    .box_site{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .image{
+        width: 250px !important;
+    }
+}
